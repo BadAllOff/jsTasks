@@ -7,3 +7,8 @@ export const findLongestWord = (string) => {
 
   return longestWord.length;
 };
+
+
+// export const findLongestWord = (string) => {
+  // return string.split(' ').reduce((a, b) => a.length > b.length ? a : b).length;
+//};

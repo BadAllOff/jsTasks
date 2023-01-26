@@ -7,3 +7,6 @@ export const confirmEnding = (string, endingWord) => {
   const ending = string.substring(string.length - endingWord.length, string.length);
   return ending == endingWord;
 };
+
+export const confirmEnding = (string, endingWord) => string.endsWith(endingWord);
+export const confirmEnding = (string, endingWord) => string.substr(-endingWord.length) === endingWord;

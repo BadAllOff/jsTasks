@@ -6,3 +6,12 @@ export const titleCase = (string) => {
     })
     .join(' ');
 };
+
+
+export const titleCase = (string) => {
+  return string.replace(/(^|\s)[a-z]/g, (match) => match.toUpperCase());
+};
+
+export const titleCase = (string) => {
+  return string.replace(/\b[a-z]/gi, (char) => char.toUpperCase());
+};

@@ -4,3 +4,6 @@ export const removeDuplicates = (array) => {
     return accum;
   }, []);
 };
+
+// the following code uses Set and Array.from() to remove duplicates:
+export const removeDuplicates = (array) => Array.from(new Set(array));

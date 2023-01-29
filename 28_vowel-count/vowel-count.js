@@ -15,3 +15,10 @@ export const vowelCount = (string) => {
 
   return result.length;
 };
+
+
+export const vowelCount = (string) => {
+  return (string.match(/[aeiou]/gi) || []).length;
+};
+
+const vowelCount = (str) => (str.match(/[aeiou]/gi) || []).length;

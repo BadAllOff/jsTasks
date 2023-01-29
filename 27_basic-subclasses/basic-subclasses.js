@@ -25,32 +25,31 @@ class God {
 
 export { God, Human, Man, Woman };
 
+// class Human {
+//   constructor(gender, name) {
+//     this.sex = gender;
+//     this.name = name;
+//   }
+// }
 
-class Human {
-  constructor(gender, name) {
-    this.sex = gender;
-    this.name = name;
-  }
-}
+// class Man extends Human {
+//   sex = 'male';
+//   constructor(name) {
+//     super(this.sex, name); // TypeError: Cannot read properties of undefined (reading 'sex')
+//   }
+// }
 
-class Man extends Human {
-  sex = 'male';
-  constructor(name) {
-    super(this.sex, name);
-  }
-}
+// class Woman extends Human {
+//   sex = 'female';
+//   constructor(name) {
+//     super(this.sex, name); // TypeError: Cannot read properties of undefined (reading 'sex')
+//   }
+// }
 
-class Woman extends Human {
-  sex = 'female';
-  constructor(name) {
-    super(this.sex, name);
-  }
-}
+// class God {
+//   static create() {
+//     return [new Man('Adam'), new Woman('Eve')];
+//   }
+// }
 
-class God {
-  static create() {
-    return [new Man('Adam'), new Woman('Eve')];
-  }
-}
-
-export { God, Human, Man, Woman };
+// export { God, Human, Man, Woman };

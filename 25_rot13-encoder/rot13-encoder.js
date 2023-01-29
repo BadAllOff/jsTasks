@@ -1,20 +1,18 @@
-export const rot13Encoder = (string) => {
-  let alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-  let chars = string.split('');
+// export const rot13Encoder = (string) => {
+//   let alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+//   let chars = string.split('');
 
-  const result = chars.map((char) => {
-    if (!alphabet.includes(char)) return char;
+//   const result = chars.map((char) => {
+//     if (!alphabet.includes(char)) return char;
 
-    let charIndex = alphabet.indexOf(char);
-    let newCharIndex = (charIndex + 13) % 26;
+//     let charIndex = alphabet.indexOf(char);
+//     let newCharIndex = (charIndex + 13) % 26;
 
-    return alphabet.charAt(newCharIndex);
-  });
+//     return alphabet.charAt(newCharIndex);
+//   });
 
-  return result.join('');
-};
-
-
+//   return result.join('');
+// };
 
 export const rot13Encoder = (string) => {
   const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
@@ -34,6 +32,5 @@ export const rot13Encoder = (string) => {
 
   return result;
 };
-
 
 // This optimized version uses a Map to store the mapping between the original characters and their rot13 encoded counterparts. This allows us to encode characters by looking up their encoded counterpart in the map, which is much faster than searching for the character in the alphabet and computing its encoded counterpart every time. Additionally, the original string is processed character by character instead of using split and map to improve performance.

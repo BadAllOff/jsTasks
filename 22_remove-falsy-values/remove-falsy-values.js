@@ -1,9 +1,8 @@
-export const removeFalsyValues = (array) => {
-  return array.filter((elem) => {
-    return elem;
-  });
-};
-
+// export const removeFalsyValues = (array) => {
+//   return array.filter((elem) => {
+//     return elem;
+//   });
+// };
 
 export const removeFalsyValues = (array) => {
   return array.filter(Boolean);

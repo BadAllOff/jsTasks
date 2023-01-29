@@ -1,11 +1,11 @@
-export const cloneArr = (array) => {
-  return array.map((element) => element);
-};
+// export const cloneArr = (array) => {
+//   return array.map((element) => element);
+// };
 
-export const cloneArray = (arr) => [...arr];
-export const cloneArray = (arr) => arr.slice();
-export const cloneArray = (arr) => Array.from(arr);
-export const cloneArray = (arr) => JSON.parse(JSON.stringify(arr));
+export const cloneArr = (arr) => [...arr];
+// export const cloneArr = (arr) => arr.slice();
+// export const cloneArr = (arr) => Array.from(arr);
+// export const cloneArr = (arr) => JSON.parse(JSON.stringify(arr));
 
 // This creates a deep copy of the original array by first converting the original array to a JSON string using JSON.stringify(), and then parsing the JSON string back into a new array using JSON.parse().
 
